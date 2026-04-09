@@ -22,7 +22,7 @@ interface HeroSliderProps {
   height?: string;
   overlayOpacity?: number;
   className?: string;
-  navbarHeight?: string; // e.g. "64px", "80px"
+  navbarHeight?: string; 
 }
 
 const HeroSlider: React.FC<HeroSliderProps> = ({
@@ -62,7 +62,7 @@ const HeroSlider: React.FC<HeroSliderProps> = ({
 
   return (
     <div
-      className={`relative w-full overflow-hidden ${className}`}
+      className={`relative w-full  overflow-hidden ${className}`}
       style={{ height: `calc(100svh - ${navbarHeight})` }}
     >
       {/* Background Images */}
@@ -92,9 +92,9 @@ const HeroSlider: React.FC<HeroSliderProps> = ({
       {/* Content — vertically centered with slight downward offset */}
       <div
         ref={overlayRef}
-        className="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 pt-4"
+        className="relative max-w-7xl mx-auto z-10 h-full flex flex-col justify-center px-6 md:px-12 pt-4"
       >
-        <div className="max-w-lg">
+        <div className="max-w-2xl">
           
 
           <h1
@@ -140,23 +140,6 @@ const HeroSlider: React.FC<HeroSliderProps> = ({
         </div>
       </div>
 
-      {/* Slide indicator dots — bottom center */}
-      {slides.length > 1 && (
-        <div className="absolute bottom-6 left-0 right-0 z-20 flex justify-center gap-2">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              aria-label={`Go to slide ${index + 1}`}
-              className={`h-1.5 rounded-full transition-all duration-500 ${
-                currentIndex === index
-                  ? "w-6 bg-red-500"
-                  : "w-1.5 bg-white/40 hover:bg-white/60"
-              }`}
-            />
-          ))}
-        </div>
-      )}
     </div>
   );
 };

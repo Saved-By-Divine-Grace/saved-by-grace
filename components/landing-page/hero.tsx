@@ -11,12 +11,12 @@ const heroSlides = [
 export default function HomePage() {
   return (
     <main>
-      <HeroSlider
+      <HeroSlider className='pt-15 '
         slides={heroSlides}
         title="Raising a Generation Saved by Grace, Living in Purpose."
         subtitle="We are a Christ-centered movement committed to spreading the Gospel, transforming lives, and building a community grounded in faith, love, and truth."
         primaryCta={{ label: 'Join Us', href: '/join' }}
-        secondaryCta={{ label: 'Learn More', href: '/about' }}
+        secondaryCta={{ label: 'Contact Us', href: '/contact' }}
       />
     </main>
   );
