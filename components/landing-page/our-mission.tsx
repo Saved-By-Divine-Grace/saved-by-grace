@@ -20,8 +20,10 @@ const fadeUp = {
 
 export default function MissionStrip() {
   return (
-    <section className="bg-white grid grid-cols-1 lg:grid-cols-2 min-h-[560px]">
-      <div className="flex flex-col justify-center px-5 py-20 md:px-10 md:py-24 overflow-hidden">
+    <div className="bg-white w-full">
+
+    <section className="bg-white max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[560px]">
+      <div className="flex flex-col  justify-center px-5 py-20 md:px-10 md:py-24 overflow-hidden">
         {/* eyebrow */}
         <motion.div
           className="flex items-center gap-3 mb-7"
@@ -53,7 +55,7 @@ export default function MissionStrip() {
 
         {/* first paragraph */}
         <motion.p
-          className="text-[15px] text-neutral-500 leading-[1.85] mb-5 font-light max-w-md"
+          className="text-[15px] text-black leading-[1.85] mb-5 font-normal max-w-md"
           variants={fadeUp}
           custom={2}
           initial="hidden"
@@ -68,7 +70,7 @@ export default function MissionStrip() {
 
         {/* second paragraph */}
         <motion.p
-          className="text-[15px] text-neutral-500 leading-[1.85] mb-8 font-light max-w-md"
+          className="text-[15px] text-black leading-[1.85] mb-8 font-normal max-w-md"
           variants={fadeUp}
           custom={3}
           initial="hidden"
@@ -85,7 +87,7 @@ export default function MissionStrip() {
         <ScriptureQuote
           quote="Now therefore ye are no more strangers and foreigners, but fellowcitizens with the saints, and of the household of God."
           reference="Ephesians 2:19"
-        />
+          />
 
         {/* CTA */}
         <motion.div
@@ -98,7 +100,7 @@ export default function MissionStrip() {
           <Link
             href="/new-here"
             className="inline-flex items-center gap-2 text-[12px] font-medium tracking-[1px] uppercase px-7 py-3.5 rounded-full border border-neutral-300 hover:border-red-600 hover:text-red-600 text-neutral-700 transition-colors duration-200"
-          >
+            >
             Join Our Family
             <span className="text-[10px]">✦</span>
           </Link>
@@ -112,7 +114,7 @@ export default function MissionStrip() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.1, ease: [0.25, 0.1, 0.25, 1] }}
         viewport={{ once: true, amount: 0.2 }}
-      >
+        >
         <Image
           src="/sbg-hero.jpg"
           alt="SBDG congregation in worship"
@@ -120,7 +122,7 @@ export default function MissionStrip() {
           className="object-cover object-center"
           sizes="(max-width: 1024px) 100vw, 50vw"
           priority
-        />
+          />
         <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-transparent to-transparent" />
 
         {/* Floating scripture card */}
@@ -130,7 +132,7 @@ export default function MissionStrip() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
           viewport={{ once: true }}
-        >
+          >
           <div className="flex items-center gap-2 mb-2">
             <div className="w-1.5 h-1.5 rounded-full bg-red-600" />
             <span className="text-[9px] tracking-[2.5px] uppercase text-red-600 font-medium">
@@ -144,5 +146,6 @@ export default function MissionStrip() {
         </motion.div>
       </motion.div>
     </section>
+          </div>
   );
 }

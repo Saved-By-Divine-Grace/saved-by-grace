@@ -26,7 +26,7 @@ export default function ScriptureQuote({
       <FaQuoteRight className="text-8xl absolute -top-7 -right-5 -rotate-12 text-red-200 pointer-events-none select-none" />
 
       {/* text */}
-      <p className="text-[15px] text-neutral-600 leading-[1.85] font-light relative z-10">
+      <p className="text-[15px] text-black leading-[1.85] font-normal relative z-10">
         {quote}
       </p>
 
