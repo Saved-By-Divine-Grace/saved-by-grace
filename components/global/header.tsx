@@ -37,7 +37,7 @@ export default function Navbar() {
     <>
       <nav
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all max-w-7xl mx-auto duration-400",
+          "fixed top-0 left-0 right-0 z-50 transition-all  mx-auto duration-400",
           scrolled
             ? "bg-white shadow-[0_1px_0_rgba(0,0,0,0.08)] py-4"
             : "bg-transparent py-6",
@@ -82,7 +82,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   className={cn(
-                    "relative text-[11px] font-normal tracking-widest uppercase px-3.5 py-2 transition-colors duration-250",
+                    "relative text-[12px] font-semibold tracking-widest uppercase px-3.5 py-2 transition-colors duration-250",
                     "after:absolute after:bottom-1 after:left-3.5 after:right-3.5 after:h-[1.5px] after:bg-red-600",
                     "after:scale-x-0 after:origin-left after:transition-transform after:duration-250",
                     "hover:after:scale-x-100 hover:text-red-600",
@@ -145,7 +145,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={closeMenu}
-              className="font-serif text-[28px] font-bold text-neutral-900 hover:text-red-600 transition-colors duration-200 py-3 w-full text-center border-b border-black/08"
+              className=" text-[28px] font-bold text-neutral-900 hover:text-red-600 transition-colors duration-200 py-3 w-full text-center "
             >
               {link.label}
             </Link>

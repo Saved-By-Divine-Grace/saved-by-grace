@@ -26,7 +26,7 @@ const services: ServiceItem[] = [
     time: "6:00 PM",
     description:
       "A mid-week encounter with God's word to keep you grounded, refreshed, and spiritually alive.",
-    image: "/images/midweek-service.jpg",
+    image: "/sbg-hero.jpg",
   },
   {
     title: "Prayer Meeting",
@@ -34,7 +34,7 @@ const services: ServiceItem[] = [
     time: "6:00 AM",
     description:
       "Start your Friday in the place of prayer — interceding, declaring, and positioning yourself for breakthrough.",
-    image: "/images/prayer-meeting.jpg",
+    image: "/sbg-hero.jpg",
   },
 ]
 
@@ -61,7 +61,7 @@ export default function OrderOfService() {
           <h2 className="text-[clamp(28px,4vw,44px)] font-bold text-neutral-900 leading-[1.15] max-w-xl">
            Worship With Us!
           </h2>
-          <p className="mt-4 text-[15px] text-neutral-500 font-light leading-[1.8] max-w-lg">
+          <p className="mt-4 text-[15px] text-black font-normal leading-[1.8] max-w-lg">
             We would love to have you worship with us. Here is what to expect
             when you join us at any of our services.
           </p>
