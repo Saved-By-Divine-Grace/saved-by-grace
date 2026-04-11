@@ -82,7 +82,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   className={cn(
-                    "relative text-[13px] font-semibold tracking-widest uppercase px-3.5 py-2 transition-colors duration-250",
+                    "relative text-[12px] font-semibold tracking-widest uppercase px-3.5 py-2 transition-colors duration-250",
                     "after:absolute after:bottom-1 after:left-3.5 after:right-3.5 after:h-[1.5px] after:bg-red-600",
                     "after:scale-x-0 after:origin-left after:transition-transform after:duration-250",
                     "hover:after:scale-x-100 hover:text-red-600",
