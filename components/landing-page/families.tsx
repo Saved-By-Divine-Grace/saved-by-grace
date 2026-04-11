@@ -28,11 +28,11 @@ export default function Families() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <div className="w-8 h-[1.5px] bg-red-600" />
+          {/* <div className="w-8 h-[1.5px] bg-red-600" /> */}
           <span className="text-[10px] font-medium tracking-[3.5px] uppercase text-red-600">
             Community
           </span>
-          <div className="w-8 h-[1.5px] bg-red-600" />
+          {/* <div className="w-8 h-[1.5px] bg-red-600" /> */}
         </motion.div>
 
         <motion.h2

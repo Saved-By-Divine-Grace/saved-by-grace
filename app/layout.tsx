@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
-import { Raleway } from "next/font/google"
+import { Raleway } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/global/header";
+import Footer from "@/components/global/footer";
 
 const raleway = Raleway({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
   variable: "--font-raleway",
   display: "swap",
-})
+});
 
 export const metadata: Metadata = {
   title: "Saved By Divine Grace Ministry",
@@ -23,11 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <>
-    <Navbar />
-     <html lang="en" className={raleway.variable}>
-            <body className={raleway.className}>
-{children}</body>
-    </html>
+      <Navbar />
+      <html lang="en" className={raleway.variable}>
+        <body className={raleway.className}>{children}</body>
+      </html>
+      <Footer />
     </>
   );
 }
