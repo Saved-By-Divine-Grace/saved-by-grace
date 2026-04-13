@@ -46,18 +46,21 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
           {/* logo */}
           <Link href="/" className="flex items-center gap-3 shrink-0">
+
             <div
               className={cn(
                 "w-10 h-10 rounded-full border flex items-center justify-center transition-all duration-400",
                 scrolled ? "border-black/15" : "border-white/30",
               )}
-            >
+              >
+              <div className="bg-white w-fit rounded-full">
               <Image
                 src="/sbdg-logo.png"
                 alt="SBDG Logo"
                 width={40}
                 height={40}
-              />
+                />
+                </div>
             </div>
 
             <div>
@@ -73,6 +76,7 @@ export default function Navbar() {
                 Ministry
               </span>
             </div>
+                
           </Link>
 
           {/* Desktop links */}
