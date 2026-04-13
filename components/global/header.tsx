@@ -10,7 +10,7 @@ const navLinks = [
   { label: "About", href: "/about" },
   { label: "Sermons", href: "/sermons" },
   { label: "Events", href: "/events" },
-  { label: "Branches", href: "/branches" },
+  { label: "Prayer Wall", href: "/prayer-wall" },
   { label: "Giving", href: "/give" },
 ];
 
@@ -160,14 +160,14 @@ export default function Navbar() {
           </Link>
         </nav>
 
-        <div className="mt-10 text-center">
+        {/* <div className="mt-10 text-center">
           <p className="text-[11px] tracking-[2px] uppercase text-neutral-400 mb-1">
             Sunday Service
           </p>
           <p className="text-[13px] font-medium text-neutral-900">
             8:00 AM &amp; 10:30 AM
           </p>
-        </div>
+        </div> */}
       </div>
     </>
   );
