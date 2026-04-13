@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react"
 import { useState } from "react"
+import { ArrowRight } from "lucide-react"
 
 const pillars = [
   { number: "01", name: "Faith", scriptures: ["1 John 5:4", "Ephesians 6:16"] },
@@ -22,7 +23,7 @@ export default function TwelvePillars() {
   const [hovered, setHovered] = useState<number | null>(null)
 
   return (
-    <section className="bg-neutral-950 py-24 px-6 lg:px-12 overflow-hidden">
+    <section className="bg-white py-20 px-6 lg:px-12 overflow-hidden">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
@@ -33,11 +34,11 @@ export default function TwelvePillars() {
           transition={{ duration: 0.7, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          <h2 className="text-[clamp(32px,5vw,56px)] font-extrabold text-white leading-[1.05] tracking-tight uppercase">
+          <h2 className="text-[clamp(32px,5vw,56px)] font-extrabold text-neutral-900 leading-[1.05] tracking-tight uppercase">
             Twelve<br />
             <span className="text-red-600">Pillars</span>
           </h2>
-          <p className="text-[15px] text-white font-normal leading-[1.85] max-w-sm lg:text-right">
+          <p className="text-[15px] text-black font-normal leading-[1.85] max-w-sm lg:text-right">
             The foundational truths that anchor everything we believe,
             preach, and practise at SBDG.
           </p>
@@ -48,7 +49,7 @@ export default function TwelvePillars() {
           {pillars.map((pillar, i) => (
             <motion.div
               key={pillar.number}
-              className="group relative border-t border-white/08 last:border-b last:border-white/08 cursor-default"
+              className="group relative border-t border-neutral-100 last:border-b last:border-neutral-100 cursor-default"
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -71,31 +72,31 @@ export default function TwelvePillars() {
 
               <div className="relative z-10 flex items-center gap-6 lg:gap-12 py-5 lg:py-6">
 
-                {/* number */}
+                {/* Number */}
                 <span
                   className={`text-[clamp(28px,4vw,48px)] font-extrabold leading-none tracking-tight w-16 lg:w-24 shrink-0 transition-colors duration-300 ${
-                    hovered === i ? "text-white" : "text-white"
+                    hovered === i ? "text-white" : "text-red-600"
                   }`}
                 >
                   {pillar.number}
                 </span>
 
-                {/* name */}
+                {/* Name */}
                 <h3
                   className={`text-[clamp(20px,3vw,36px)] font-extrabold uppercase tracking-tight leading-none flex-1 transition-colors duration-300 ${
-                    hovered === i ? "text-white" : "text-white"
+                    hovered === i ? "text-white" : "text-black"
                   }`}
                 >
                   {pillar.name}
                 </h3>
 
-                {/* scriptures — hidden on mobile, right-aligned on desktop */}
+                {/* Scriptures */}
                 <div className="hidden lg:flex flex-col items-end gap-1 shrink-0">
                   {pillar.scriptures.map((ref) => (
                     <span
                       key={ref}
                       className={`text-[12px] font-semibold tracking-wide transition-colors duration-300 ${
-                        hovered === i ? "text-white" : "text-white"
+                        hovered === i ? "text-white" : "text-black"
                       }`}
                     >
                       {ref}
@@ -103,7 +104,7 @@ export default function TwelvePillars() {
                   ))}
                 </div>
 
-                {/* Arrow indicator */}
+                {/* Arrow */}
                 <motion.div
                   className="shrink-0 ml-2"
                   animate={{
@@ -112,18 +113,7 @@ export default function TwelvePillars() {
                   }}
                   transition={{ duration: 0.25, ease: "easeOut" }}
                 >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="white"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
+                  <ArrowRight size={16} className="text-white" />
                 </motion.div>
 
               </div>
