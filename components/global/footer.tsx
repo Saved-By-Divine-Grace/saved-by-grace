@@ -125,26 +125,6 @@ export default function Footer() {
               ))}
             </div>
 
-            {/* Service times */}
-            <div className="border border-white/08 p-4 flex flex-col gap-3">
-              <p className="text-[9px] font-medium tracking-[2.5px] uppercase text-red-500">
-                Service Times
-              </p>
-              {[
-                { day: "Sunday", time: "8:00 AM & 10:30 AM" },
-                { day: "Wednesday", time: "6:00 PM" },
-                { day: "Friday", time: "6:00 AM — Prayer" },
-              ].map((s) => (
-                <div key={s.day} className="flex items-center justify-between">
-                  <span className="text-[12px] text-white font-normal">
-                    {s.day}
-                  </span>
-                  <span className="text-[12px] text-white font-medium">
-                    {s.time}
-                  </span>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Col 2 — Quick Links */}

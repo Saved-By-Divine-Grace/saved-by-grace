@@ -1,8 +1,7 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { motion } from "motion/react"
-
+import Link from "next/link";
+import { motion } from "motion/react";
 
 const families = [
   { name: "Blessing Family", image: "/sbg-hero.jpg" },
@@ -10,15 +9,14 @@ const families = [
   { name: "Peace Family", image: "/sbg-hero.jpg" },
   { name: "Faith Family", image: "/sbg-hero.jpg" },
   { name: "Grace Family", image: "/sbg-hero.jpg" },
-]
+];
 
 // duplicating for infinite feel
-const marqueeItems = [...families, ...families, ...families]
+const marqueeItems = [...families, ...families, ...families];
 
 export default function Families() {
   return (
     <section className="bg-white py-24 overflow-hidden">
-
       {/* header */}
       <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center mb-14">
         <motion.div
@@ -42,7 +40,8 @@ export default function Families() {
           transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          We Don&apos;t Do<br />
+          We Don&apos;t Do
+          <br />
           <span className="text-red-600">Life Alone!</span>
         </motion.h2>
 
@@ -65,11 +64,10 @@ export default function Families() {
           viewport={{ once: true }}
         >
           <Link
-            href="/about#families"
+            href="/new-here"
             className="inline-flex items-center gap-3 border border-neutral-300 hover:border-red-600 hover:text-red-600 text-black text-[12px] font-medium tracking-[1px] uppercase px-8 py-3.5 rounded-full transition-colors duration-200"
           >
             Find Your Family, Build Together
-            
           </Link>
         </motion.div>
       </div>
@@ -83,9 +81,9 @@ export default function Families() {
         viewport={{ once: true }}
       >
         {/* Left fade */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+        {/* <div className="absolute left-0 top-0 bottom-0 w-10 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" /> */}
         {/* Right fade */}
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+        {/* <div className="absolute right-0 top-0 bottom-0 w-10 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" /> */}
 
         <div className="flex gap-4 marquee-track">
           {marqueeItems.map((family, i) => (
@@ -105,18 +103,21 @@ export default function Families() {
         }
 
         @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(calc(-100% / 3)); }
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(calc(-100% / 3));
+          }
         }
       `}</style>
     </section>
-  )
+  );
 }
 
 function FamilyCard({ family }: { family: { name: string; image: string } }) {
   return (
     <div className="relative flex-shrink-0 rounded-md w-[380px] h-[280px] overflow-hidden group cursor-pointer">
-
       {/* Image */}
       <div
         className="absolute inset-0 bg-neutral-200 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
@@ -132,7 +133,6 @@ function FamilyCard({ family }: { family: { name: string; image: string } }) {
       {/* Family name */}
       <div className="absolute bottom-0 left-0 right-0 p-6">
         <div className="flex items-center gap-2 mb-2">
-          
           <span className="text-[9px] font-medium tracking-[2.5px] uppercase text-red-400">
             SBDG Family
           </span>
@@ -144,9 +144,6 @@ function FamilyCard({ family }: { family: { name: string; image: string } }) {
           </span>
         </p>
       </div>
-
-     
-
     </div>
-  )
+  );
 }
