@@ -37,15 +37,24 @@ const AboutHero: React.FC<AboutHeroProps> = ({
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center justify-center px-6 md:px-12">
+      <div className="relative z-10 h-full flex flex-col gap-6 items-center justify-center px-6 md:px-12">
         <motion.h1
           className="text-[clamp(3rem,4.5vw,4rem)] font-extrabold text-white leading-[1.1] tracking-tight text-center uppercase max-w-3xl"
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
         >
-          Saved by Grace. Sent with Purpose. Built for Eternity.
+          Welcome To Saved By Divine Grace.
         </motion.h1>
+
+        <motion.p
+          className="text-[clamp(2rem,4.5vw,3rem)] font-semibold text-red-600 leading-[1.1] tracking-tight text-center max-w-3xl"
+          initial={{ opacity: 0, y: 32 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
+        >
+          Who We Are
+        </motion.p>
       </div>
     </div>
   )
