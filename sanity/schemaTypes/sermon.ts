@@ -31,12 +31,6 @@ export default defineType({
       validation: (r) => r.required(),
     }),
     defineField({
-      name: "series",
-      title: "Series",
-      type: "reference",
-      to: [{ type: "series" }],
-    }),
-    defineField({
       name: "topic",
       title: "Topic",
       type: "string",

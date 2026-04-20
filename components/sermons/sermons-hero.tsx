@@ -71,14 +71,6 @@ export default function SermonsHero({ featured }: SermonsHeroProps) {
               <span className="text-[13px] text-white/60 font-normal">
                 {format(new Date(featured.date), "MMMM d, yyyy")}
               </span>
-              {featured.series && (
-                <>
-                  <span className="w-1 h-1 rounded-full bg-white/30" />
-                  <span className="text-[13px] text-white/60 font-normal">
-                    {featured.series.title}
-                  </span>
-                </>
-              )}
               {featured.duration && (
                 <>
                   <span className="w-1 h-1 rounded-full bg-white/30" />

@@ -2,32 +2,29 @@
 
 import { useState, useMemo } from "react"
 import { motion, AnimatePresence } from "motion/react"
-import { Sermon, SermonSeries } from "@/types/sermon"
+import { Sermon } from "@/types/sermon"
 import SermonCard from "./sermon-card"
 
 interface SermonGridProps {
   sermons: Sermon[]
-  series: SermonSeries[]
 }
 
-export default function SermonGrid({ sermons, series }: SermonGridProps) {
+export default function SermonGrid({ sermons }: SermonGridProps) {
   const [activeSeries, setActiveSeries] = useState<string>("all")
   const [activePlatform, setActivePlatform] = useState<string>("all")
   const [search, setSearch] = useState("")
 
   const filtered = useMemo(() => {
     return sermons.filter((s) => {
-      const matchesSeries =
-        activeSeries === "all" || s.series?._id === activeSeries
       const matchesPlatform =
         activePlatform === "all" || s.platform === activePlatform
       const matchesSearch =
         search === "" ||
         s.title.toLowerCase().includes(search.toLowerCase()) ||
         s.preacher?.toLowerCase().includes(search.toLowerCase())
-      return matchesSeries && matchesPlatform && matchesSearch
+    
     })
-  }, [sermons, activeSeries, activePlatform, search])
+  }, [sermons,  activePlatform, search])
 
   return (
     <section className="bg-neutral-50 py-20 px-6 lg:px-12">
@@ -48,19 +45,7 @@ export default function SermonGrid({ sermons, series }: SermonGridProps) {
             >
               All
             </button>
-            {series.map((s) => (
-              <button
-                key={s._id}
-                onClick={() => setActiveSeries(s._id)}
-                className={`text-[11px] font-medium tracking-[1px] uppercase px-4 py-2 transition-colors duration-200 ${
-                  activeSeries === s._id
-                    ? "bg-red-600 text-white"
-                    : "bg-white text-neutral-600 hover:text-red-600 border border-neutral-200"
-                }`}
-              >
-                {s.title}
-              </button>
-            ))}
+            
           </div>
 
           {/* right — platform + search */}

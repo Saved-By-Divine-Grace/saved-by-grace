@@ -78,12 +78,7 @@ export default function SermonCard({ sermon }: SermonCardProps) {
       {/* content */}
       <div className="flex flex-col gap-2 p-5 flex-1">
 
-        {/* series */}
-        {sermon.series && (
-          <span className="text-[10px] font-medium tracking-[2px] uppercase text-red-600">
-            {sermon.series.title}
-          </span>
-        )}
+       
 
         {/* title */}
         <h3 className="text-[16px] font-extrabold text-neutral-900 leading-snug tracking-tight group-hover:text-red-600 transition-colors duration-200 line-clamp-2">
