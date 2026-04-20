@@ -16,7 +16,7 @@ export default function ScriptureQuote({
 }: ScriptureQuoteProps) {
   return (
     <motion.blockquote
-      className={`relative overflow-hidden tracking-tight text-lg my-8 lg:py-6 lg:pl-6 pr-12 p-4 border border-neutral-200 rounded-md ${className}`}
+      className={`relative overflow-hidden tracking-tight text-lg my-4 lg:py-6 lg:pl-6 pr-12 p-4 border border-neutral-200 rounded-md ${className}`}
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
