@@ -19,7 +19,7 @@ const raleway = localFont({
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://savedbydivinegrace.org"
 
 export const viewport: Viewport = {
-  themeColor: "#E30000",
+  themeColor: "#ffffff",
   width: "device-width",
   initialScale: 1,
 }

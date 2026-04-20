@@ -13,7 +13,7 @@ interface SermonsHeroProps {
 
 export default function SermonsHero({ featured }: SermonsHeroProps) {
   return (
-    <section className="relative w-full min-h-[70vh] overflow-hidden bg-neutral-950 flex items-end">
+    <section className="relative w-full min-h-[100vh] overflow-hidden bg-neutral-950 flex items-end">
 
       {/* Background */}
       <div className="absolute inset-0 z-0">
