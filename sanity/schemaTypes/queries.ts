@@ -40,10 +40,35 @@ export const featuredSermonQuery = groq`
   }
 `
 
-// export const allSeriesQuery = groq`
-//   *[_type == "series"] | order(startDate desc) {
-//     _id,
-//     title,
-//     slug
-//   }
-// `
+export const upcomingEventsQuery = groq`
+  *[_type == "event" && date >= now()] | order(date asc) {
+    _id,
+    title,
+    slug,
+    type,
+    date,
+    endDate,
+    location,
+    description,
+    featured,
+    image {
+      asset -> { _id, url },
+      hotspot
+    }
+  }
+`
+
+export const pastEventsQuery = groq`
+  *[_type == "event" && date < now()] | order(date desc) [0..5] {
+    _id,
+    title,
+    slug,
+    type,
+    date,
+    location,
+    image {
+      asset -> { _id, url },
+      hotspot
+    }
+  }
+`
