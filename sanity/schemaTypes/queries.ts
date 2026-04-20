@@ -17,11 +17,7 @@ export const allSermonsQuery = groq`
       asset -> { _id, url },
       hotspot
     },
-    series -> {
-      _id,
-      title,
-      slug
-    }
+    
   }
 `
 
@@ -40,17 +36,14 @@ export const featuredSermonQuery = groq`
       asset -> { _id, url },
       hotspot
     },
-    series -> {
-      title,
-      slug
-    }
+    
   }
 `
 
-export const allSeriesQuery = groq`
-  *[_type == "series"] | order(startDate desc) {
-    _id,
-    title,
-    slug
-  }
-`
+// export const allSeriesQuery = groq`
+//   *[_type == "series"] | order(startDate desc) {
+//     _id,
+//     title,
+//     slug
+//   }
+// `

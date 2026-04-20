@@ -1,4 +1,4 @@
 import sermon from "./sermon"
-import series from "./series"
+// import series from "./series"
 
-export const schemaTypes = [sermon, series]
+export const schemaTypes = [sermon ]
