@@ -18,19 +18,7 @@ export default function EventsHero() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-        <motion.div
-          className="flex items-center gap-3 mb-5"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        >
-          <div className="w-8 h-[1.5px] bg-red-600" />
-          <span className="text-[10px] font-medium tracking-[3.5px] uppercase text-red-500">
-            What's Coming
-          </span>
-          <div className="w-8 h-[1.5px] bg-red-600" />
-        </motion.div>
-
+        
         <motion.h1
           className="text-[clamp(2rem,5vw,4rem)] font-extrabold text-white leading-[1.05] tracking-tight uppercase"
           initial={{ opacity: 0, y: 24 }}
@@ -41,7 +29,7 @@ export default function EventsHero() {
         </motion.h1>
 
         <motion.p
-          className="mt-4 text-[14px] text-white/70 font-normal max-w-md leading-[1.8]"
+          className="mt-4 text-[14px] text-white font-normal max-w-md leading-[1.8]"
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
