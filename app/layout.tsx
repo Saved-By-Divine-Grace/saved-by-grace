@@ -16,7 +16,7 @@ const raleway = localFont({
   display: "swap",
 })
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://savedbydivinegrace.org"
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://saved-by-grace-blue.vercel.app"
 
 export const viewport: Viewport = {
   themeColor: "#ffffff",

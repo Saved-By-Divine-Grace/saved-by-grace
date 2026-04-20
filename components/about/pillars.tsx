@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react"
 import { useState } from "react"
-import { ArrowRight } from "lucide-react"
 
 const pillars = [
   { number: "01", name: "Faith", scriptures: ["1 John 5:4", "Ephesians 6:16"] },
@@ -23,12 +22,12 @@ export default function TwelvePillars() {
   const [hovered, setHovered] = useState<number | null>(null)
 
   return (
-    <section className="bg-white py-20 px-6 lg:px-12 overflow-hidden">
+    <section className="bg-neutral-50 py-24 px-6 lg:px-12 overflow-hidden">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
         <motion.div
-          className="mb-16 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6"
+          className="mb-20 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
@@ -38,85 +37,85 @@ export default function TwelvePillars() {
             Twelve<br />
             <span className="text-red-600">Pillars</span>
           </h2>
-          <p className="text-[15px] text-black font-normal leading-[1.85] max-w-sm lg:text-right">
+          <p className="text-[15px] text-neutral-500 font-normal leading-[1.85] max-w-sm lg:text-right">
             The foundational truths that anchor everything we believe,
             preach, and practise at SBDG.
           </p>
         </motion.div>
 
-        {/* pillar list */}
-        <div className="flex flex-col">
+        {/* Cards grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-10">
           {pillars.map((pillar, i) => (
             <motion.div
               key={pillar.number}
-              className="group relative border-t border-neutral-100 last:border-b last:border-neutral-100 cursor-default"
-              initial={{ opacity: 0, y: 16 }}
+              className="relative group cursor-default"
+              initial={{ opacity: 0, y: 32 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.5,
-                delay: i * 0.04,
+                duration: 0.55,
+                delay: i * 0.055,
                 ease: "easeOut",
               }}
               viewport={{ once: true, amount: 0.1 }}
               onMouseEnter={() => setHovered(i)}
               onMouseLeave={() => setHovered(null)}
             >
-              {/* background fill on hover */}
+              {/* Number — floats on top edge */}
+              <motion.span
+                className="absolute -top-6 left-5 text-[56px] font-extrabold leading-none tracking-tight select-none z-20 transition-colors duration-300"
+                animate={{
+                  color: hovered === i ? "#111111" : "#e5e7eb",
+                }}
+                transition={{ duration: 0.35 }}
+              >
+                {pillar.number}
+              </motion.span>
+
+              {/* Card */}
               <motion.div
-                className="absolute inset-0 bg-red-600"
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: hovered === i ? 1 : 0 }}
-                transition={{ duration: 0.4, ease: "easeOut" }}
-                style={{ originX: 0 }}
-              />
-
-              <div className="relative z-10 flex items-center gap-6 lg:gap-12 py-5 lg:py-6">
-
-                {/* Number */}
-                <span
-                  className={`text-[clamp(28px,4vw,48px)] font-extrabold leading-none tracking-tight w-16 lg:w-24 shrink-0 transition-colors duration-300 ${
-                    hovered === i ? "text-white" : "text-red-600"
-                  }`}
-                >
-                  {pillar.number}
-                </span>
-
-                {/* Name */}
-                <h3
-                  className={`text-[clamp(20px,3vw,36px)] font-extrabold uppercase tracking-tight leading-none flex-1 transition-colors duration-300 ${
-                    hovered === i ? "text-white" : "text-black"
-                  }`}
-                >
+                className="relative overflow-hidden bg-white pt-10 pb-8 px-6 flex flex-col gap-4 h-full"
+                animate={{
+                  boxShadow:
+                    hovered === i
+                      ? "0 16px 48px -8px rgba(0,0,0,0.12)"
+                      : "0 1px 3px rgba(0,0,0,0.06)",
+                  y: hovered === i ? -4 : 0,
+                }}
+                transition={{ duration: 0.35, ease: "easeOut" }}
+              >
+                {/* Pillar name */}
+                <h3 className="text-[20px] font-extrabold text-neutral-900 uppercase tracking-tight leading-tight">
                   {pillar.name}
                 </h3>
 
+                {/* Thin divider */}
+                <motion.div
+                  className="h-[1.5px] bg-neutral-100"
+                  animate={{
+                    width: hovered === i ? "48px" : "24px",
+                    backgroundColor: hovered === i ? "#E30000" : "#f3f4f6",
+                  }}
+                  transition={{ duration: 0.3 }}
+                />
+
                 {/* Scriptures */}
-                <div className="hidden lg:flex flex-col items-end gap-1 shrink-0">
+                <div className="flex flex-col gap-1 mt-auto">
                   {pillar.scriptures.map((ref) => (
                     <span
                       key={ref}
-                      className={`text-[12px] font-semibold tracking-wide transition-colors duration-300 ${
-                        hovered === i ? "text-white" : "text-black"
-                      }`}
+                      className="text-[12px] font-medium tracking-wide text-neutral-400"
                     >
                       {ref}
                     </span>
                   ))}
                 </div>
 
-                {/* Arrow */}
-                <motion.div
-                  className="shrink-0 ml-2"
-                  animate={{
-                    x: hovered === i ? 0 : -8,
-                    opacity: hovered === i ? 1 : 0,
-                  }}
-                  transition={{ duration: 0.25, ease: "easeOut" }}
-                >
-                  <ArrowRight size={16} className="text-white" />
-                </motion.div>
+                {/* ghost number */}
+                <span className="absolute -bottom-3 -right-1 text-[72px] font-extrabold leading-none select-none pointer-events-none text-neutral-50">
+                  {pillar.number}
+                </span>
 
-              </div>
+              </motion.div>
             </motion.div>
           ))}
         </div>
