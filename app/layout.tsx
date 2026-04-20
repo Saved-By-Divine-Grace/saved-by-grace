@@ -1,10 +1,16 @@
 import type { Metadata } from "next"
-import { Raleway } from "next/font/google"
 import "./globals.css"
+import localFont from "next/font/local"
 
-const raleway = Raleway({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+const raleway = localFont({
+  src: [
+    { path: "./fonts/Raleway-Light.ttf", weight: "300", style: "normal" },
+    { path: "./fonts/Raleway-Regular.ttf", weight: "400", style: "normal" },
+    { path: "./fonts/Raleway-Medium.ttf", weight: "500", style: "normal" },
+    { path: "./fonts/Raleway-SemiBold.ttf", weight: "600", style: "normal" },
+    { path: "./fonts/Raleway-Bold.ttf", weight: "700", style: "normal" },
+    { path: "./fonts/Raleway-ExtraBold.ttf", weight: "800", style: "normal" },
+  ],
   variable: "--font-raleway",
   display: "swap",
 })
