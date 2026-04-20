@@ -58,7 +58,7 @@ export default function Footer() {
     <footer className="bg-neutral-950 text-white">
       {/* Top CTA band */}
       <div className="border-b border-white/08">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-12 flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div className="max-w-7xl mx-auto text-center md:text-left lg:px-12 py-12 flex flex-col lg:flex-row items-center justify-between gap-6">
           <div>
             <p className="text-[10px] font-medium tracking-[3.5px] uppercase text-red-500 mb-2">
               You Belong Here
