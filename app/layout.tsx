@@ -72,7 +72,7 @@ export const metadata: Metadata = {
       "Committed to winning souls through evangelism and building a strong prayer and word-driven church. Join us every Sunday — Ore, Ondo State, Nigeria.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Saved By Divine Grace of God Ministry",
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     title: "Saved By Divine Grace of God Ministry",
     description:
       "Committed to winning souls through evangelism and building a strong prayer and word-driven church. Join us every Sunday.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
     site: "@sbdg_m",
     creator: "@sbdg_m",
   },
@@ -94,16 +94,16 @@ export const metadata: Metadata = {
 
   icons: {
     icon: [
-      { url: "/sbdg-logo.png" },
-      { url: "/sbdg-logo.png", sizes: "16x16", type: "image/png" },
-      { url: "/sbdg-logo.png", sizes: "32x32", type: "image/png" },
+      { url: "/meta-logo.png" },
+      { url: "/meta-logo.png", sizes: "16x16", type: "image/png" },
+      { url: "/meta-logo.png", sizes: "32x32", type: "image/png" },
     ],
     apple: [
-      { url: "/sbdg-logo.png", sizes: "180x180", type: "image/png" },
+      { url: "/meta-logo-ii.png", sizes: "180x180", type: "image/png" },
     ],
     other: [
       {
-        rel: "mask-icon",
+        rel: "meta-logo",
         url: "/safari-pinned-tab.svg",
       },
     ],
