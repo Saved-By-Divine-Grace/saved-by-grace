@@ -10,7 +10,7 @@ const navLinks = [
   { label: "About", href: "/about" },
   { label: "Sermons", href: "/sermons" },
   { label: "Events", href: "/events" },
-  { label: "Prayer Wall", href: "/prayer-wall" },
+  // { label: "Prayer Wall", href: "/prayer-wall" },
   { label: "Giving", href: "/give" },
 ];
 
@@ -100,7 +100,7 @@ export default function Navbar() {
 
             <li>
               <Link
-                href="/new-here"
+                href="/join-us"
                 className="ml-2 bg-red-600 hover:bg-red-700 text-white text-[11px] font-medium tracking-[1.5px] uppercase px-5 py-2.5 transition-colors duration-200"
               >
                 Join Us
@@ -156,7 +156,7 @@ export default function Navbar() {
           ))}
 
           <Link
-            href="/new-here"
+            href="/join-us"
             onClick={closeMenu}
             className="mt-6 bg-red-600 hover:bg-red-700 text-white font-sans text-[13px] font-medium tracking-[1.5px] uppercase px-12 py-4 transition-colors duration-200"
           >
