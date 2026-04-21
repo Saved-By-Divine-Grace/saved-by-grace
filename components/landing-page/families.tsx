@@ -64,7 +64,7 @@ export default function Families() {
           viewport={{ once: true }}
         >
           <Link
-            href="/new-here"
+            href="/join-us"
             className="inline-flex items-center gap-3 border border-neutral-300 hover:border-red-600 hover:text-red-600 text-black text-[12px] font-medium tracking-[1px] uppercase px-8 py-3.5 rounded-full transition-colors duration-200"
           >
             Find Your Family, Build Together

@@ -6,7 +6,7 @@ import EventsCarousel from "@/components/events/events-carousel"
 import PastEvents from "@/components/events/past-events"
 import type { Metadata } from "next"
 
-// export const dynamic = "force-dynamic"
+export const dynamic = "force-dynamic"
 
 export const metadata: Metadata = {
   title: "Events | Saved By Divine Grace of God Ministry",
