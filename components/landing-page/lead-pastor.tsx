@@ -59,7 +59,7 @@ export default function LeadPastor() {
           <p className="text-[14px] text-white leading-[1.9] font-normal mb-4">
             Apostle Solomon Opeyemi is the General Overseer of Saved by Divine
             Grace of God Ministry — a ministry built on the unshakeable
-            foundation of God's word, prayer, and evangelism. Under his
+            foundation of God&lsquo;s word, prayer, and evangelism. Under his
             leadership, the church is growing into a national force for the
             kingdom of God.
           </p>
@@ -67,7 +67,7 @@ export default function LeadPastor() {
           <p className="text-[14px] text-white leading-[1.9] font-normal mb-8">
             Sent to encourage the discouraged, give hope to the hopeless, and
             rescue the ex-champion — his message is one of grace, restoration,
-            and the transforming power of God's word.
+            and the transforming power of God&lsquo;s word.
           </p>
 
           {/* Stats */}
@@ -169,7 +169,7 @@ export default function LeadPastor() {
             >
               Apostle Solomon Opeyemi is the General Overseer of Saved by Divine
               Grace of God Ministry — a ministry built on the unshakeable
-              foundation of God's word, prayer, and evangelism. Under his
+              foundation of God&lsquo;s word, prayer, and evangelism. Under his
               leadership, the church is growing into a national force for the
               kingdom of God.
             </motion.p>
@@ -183,7 +183,7 @@ export default function LeadPastor() {
             >
               Sent to encourage the discouraged, give hope to the hopeless, and
               rescue the ex-champion — his message is one of grace, restoration,
-              and the transforming power of God's word.
+              and the transforming power of God&lsquo;s word.
             </motion.p>
 
             <motion.div

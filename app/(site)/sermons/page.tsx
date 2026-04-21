@@ -9,6 +9,8 @@ import SermonsHero from "@/components/sermons/sermons-hero"
 import SermonGrid from "@/components/sermons/sermons-grid"
 import type { Metadata } from "next"
 
+export const dynamic = "force-dynamic"
+
 export const metadata: Metadata = {
   title: "Sermons | Saved By Divine Grace of God Ministry",
   description:

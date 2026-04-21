@@ -15,13 +15,13 @@ export default function SermonGrid({ sermons }: SermonGridProps) {
   const [search, setSearch] = useState("")
 
   const filtered = useMemo(() => {
-    return sermons.filter((s) => {
-      const matchesPlatform =
-        activePlatform === "all" || s.platform === activePlatform
-      const matchesSearch =
-        search === "" ||
-        s.title.toLowerCase().includes(search.toLowerCase()) ||
-        s.preacher?.toLowerCase().includes(search.toLowerCase())
+    return sermons.filter(() => {
+      // const matchesPlatform =
+      //   activePlatform === "all" || s.platform === activePlatform
+      // const matchesSearch =
+      //   search === "" ||
+      //   s.title.toLowerCase().includes(search.toLowerCase()) ||
+      //   s.preacher?.toLowerCase().includes(search.toLowerCase())
     
     })
   }, [sermons,  activePlatform, search])

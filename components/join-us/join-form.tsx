@@ -148,8 +148,8 @@ export default function JoinForm() {
                 Welcome to the Family
               </h3>
               <p className="text-[14px] text-neutral-500 font-normal leading-[1.85] max-w-sm">
-                We've received your details and will be in touch within
-                24–48 hours. We're excited to have you.
+                We have received your details and will be in touch within
+                24–48 hours. We are excited to have you.
               </p>
               <button
                 onClick={() => setStatus("idle")}

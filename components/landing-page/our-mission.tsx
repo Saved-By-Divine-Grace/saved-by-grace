@@ -63,7 +63,7 @@ export default function MissionStrip() {
           viewport={{ once: true, amount: 0.3 }}
         >
           We are more than a church. We are a family rooted in faith, driven by
-          the power of God's word and sustained by His unending grace. Our
+          the power of God&lsquo;s word and sustained by His unending grace. Our
           mission is to win souls through evangelism and raise a strong prayer
           and word-driven community.
         </motion.p>
