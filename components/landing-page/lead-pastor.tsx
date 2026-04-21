@@ -222,19 +222,14 @@ export default function LeadPastor() {
               viewport={{ once: true }}
             >
               <Link
-                href="/about"
+                href="/sermons"
                 className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white text-[11px] font-medium tracking-[1.5px] uppercase px-8 py-4 transition-colors duration-200"
               >
-                Learn More About Him
+                Watch Sermons
                 <FaAngleRight className="w-4 h-4" />
               </Link>
 
-              <Link
-                href="/sermons"
-                className="inline-flex items-center gap-2 text-white/70 hover:text-white text-[11px] font-medium tracking-[1.5px] uppercase transition-colors duration-200 border-b border-white/20 hover:border-white pb-0.5"
-              >
-                Watch Sermons
-              </Link>
+              
             </motion.div>
 
           </div>
