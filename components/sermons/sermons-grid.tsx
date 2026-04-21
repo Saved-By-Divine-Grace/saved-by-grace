@@ -24,7 +24,7 @@ export default function SermonGrid({ sermons }: SermonGridProps) {
       //   s.preacher?.toLowerCase().includes(search.toLowerCase())
     
     })
-  }, [sermons,  activePlatform, search])
+  }, [sermons])
 
   return (
     <section className="bg-neutral-50 py-20 px-6 lg:px-12">
