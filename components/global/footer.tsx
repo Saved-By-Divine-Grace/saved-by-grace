@@ -39,11 +39,11 @@ const quickLinks = [
 ];
 
 const connectLinks = [
-  { label: "New Here", href: "/new-here" },
-  { label: "Prayer Wall", href: "/prayer-wall" },
-  { label: "Contact Us", href: "/contact" },
+  { label: "New Here", href: "/join-us" },
+  // { label: "Prayer Wall", href: "/prayer-wall" },
+  // { label: "Contact Us", href: "/contact" },
   { label: "Join a Family", href: "/about#families" },
-  { label: "Volunteer", href: "/ministries#volunteer" },
+  // { label: "Volunteer", href: "/ministries#volunteer" },
 ];
 
 // const legalLinks = [
@@ -55,7 +55,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-neutral-950 text-white">
+    <footer className="bg-white text-black">
       {/* Top CTA band */}
       <div className="border-b border-white/08">
         <div className="max-w-7xl mx-auto text-center md:text-left lg:px-12 py-12 flex flex-col lg:flex-row items-center justify-between gap-6">
@@ -272,3 +272,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+
