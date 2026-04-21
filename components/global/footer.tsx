@@ -57,7 +57,7 @@ export default function Footer() {
   return (
     <footer className="bg-white text-black">
       {/* Top CTA band */}
-      <div className="border-b border-white/08">
+      <div className="border-y border-red-600">
         <div className="max-w-7xl mx-auto text-center md:text-left lg:px-12 py-12 flex flex-col lg:flex-row items-center justify-between gap-6">
           <div>
             <p className="text-[10px] font-medium tracking-[3.5px] uppercase text-red-500 mb-2">
@@ -70,13 +70,13 @@ export default function Footer() {
           <div className="flex items-center gap-4 flex-wrap">
             <Link
               href="/new-here"
-              className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-black text-[11px] font-medium tracking-[1.5px] uppercase px-7 py-3.5 transition-colors duration-200"
+              className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-[11px] font-medium tracking-[1.5px] uppercase px-7 py-3.5 transition-colors duration-200"
             >
               Plan Your Visit
             </Link>
             <Link
               href="/give"
-              className="inline-flex items-center gap-2 border border-white/20 hover:border-white text-black text-[11px] font-medium tracking-[1.5px] uppercase px-7 py-3.5 transition-colors duration-200"
+              className="inline-flex items-center gap-2 border border-red-600 hover:border-red-600 text-black text-[11px] font-medium tracking-[1.5px] uppercase px-7 py-3.5 transition-colors duration-200"
             >
               Give Online
             </Link>
@@ -129,7 +129,7 @@ export default function Footer() {
 
           {/* Col 2 — Quick Links */}
           <div className="flex flex-col gap-5">
-            <p className="text-[13px] font-medium tracking-[3px] uppercase text-black">
+            <p className="text-[13px] font-semibold tracking-[3px] uppercase text-black">
               Quick Links
             </p>
             <ul className="flex flex-col gap-3">
@@ -149,7 +149,7 @@ export default function Footer() {
 
           {/* Col 3 — Connect */}
           <div className="flex flex-col gap-5">
-            <p className="text-[13px] font-medium tracking-[3px] uppercase text-black">
+            <p className="text-[13px] font-semibold tracking-[3px] uppercase text-black">
               Connect
             </p>
             <ul className="flex flex-col gap-3">
@@ -168,8 +168,8 @@ export default function Footer() {
           </div>
 
           {/* Col 4 — Contact */}
-          <div className="flex flex-col gap-5">
-            <p className="text-[13px] font-medium tracking-[3px] uppercase text-black">
+          <div id="contact" className="flex flex-col gap-5">
+            <p className="text-[13px] font-semibold tracking-[3px] uppercase text-black">
               Contact
             </p>
 
@@ -206,7 +206,7 @@ export default function Footer() {
 
               {/* Email */}
               <div className="flex flex-col gap-1">
-                <p className="text-[9px] font-medium tracking-[2px] uppercase text-red-500">
+                <p className="text-[9px] font-semibold tracking-[2px] uppercase text-red-500">
                   Email
                 </p>
                 <Link
@@ -238,7 +238,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-white/08">
+      <div className="border-y border-red-600">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[11px] text-black font-normal">
             © {year} Saved By Divine Grace of God Ministry. All rights reserved.
@@ -262,7 +262,7 @@ export default function Footer() {
               href="https://aremuolami.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black hover:text-red-500 transition-colors duration-200"
+              className="text-black hover:text-red-500 transition-colors underline duration-200"
             >
               Olamilekan Aremu
             </Link>

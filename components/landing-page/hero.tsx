@@ -16,7 +16,7 @@ export default function HomePage() {
         title="Raising a Generation Saved by Grace, Living in Purpose."
         subtitle="We are a Christ-centered movement committed to spreading the Gospel, transforming lives, and building a community grounded in faith, love, and truth."
         primaryCta={{ label: 'Join Us', href: '/join-us' }}
-        secondaryCta={{ label: 'Contact Us', href: '/contact' }}
+        secondaryCta={{ label: 'Contact Us', href: '#contact' }}
       />
     </main>
   );

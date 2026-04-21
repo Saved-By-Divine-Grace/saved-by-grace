@@ -89,18 +89,13 @@ export default function LeadPastor() {
           {/* cta's - stacked on mobile */}
           <div className="flex flex-col gap-3">
             <Link
-              href="/about"
+              href="/sermons"
               className="inline-flex items-center justify-center gap-3 bg-red-600 hover:bg-red-700 text-white text-[11px] font-medium tracking-[1.5px] uppercase px-8 py-4 transition-colors duration-200 w-full"
             >
-              Learn More About Him
+              Watch Sermons
               <FaAngleRight className="w-4 h-4" />
             </Link>
-            <Link
-              href="/sermons"
-              className="inline-flex items-center justify-center gap-2 text-white/70 hover:text-white text-[11px] font-medium tracking-[1.5px] uppercase transition-colors duration-200 border border-white/15 hover:border-white/40 py-4 w-full"
-            >
-              Watch Sermons
-            </Link>
+            
           </div>
 
         </div>
