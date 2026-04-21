@@ -63,7 +63,7 @@ export default function MissionStrip() {
           viewport={{ once: true, amount: 0.3 }}
         >
           We are more than a church. We are a family rooted in faith, driven by
-          the power of God's word and sustained by His unending grace. Our
+          the power of God&lsquo;s word and sustained by His unending grace. Our
           mission is to win souls through evangelism and raise a strong prayer
           and word-driven community.
         </motion.p>
@@ -98,11 +98,11 @@ export default function MissionStrip() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <Link
-            href="/new-here"
+            href="/join-us"
             className="inline-flex items-center gap-2 text-[12px] font-medium tracking-[1px] uppercase px-7 py-3.5 rounded-full border border-neutral-300 hover:border-red-600 hover:text-red-600 text-neutral-700 transition-colors duration-200"
             >
             Join Our Family
-            <span className="text-[10px]">✦</span>
+         
           </Link>
         </motion.div>
       </div>

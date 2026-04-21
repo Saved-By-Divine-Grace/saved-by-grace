@@ -3,6 +3,9 @@ import MissionStrip from "@/components/landing-page/our-mission";
 import OrderOfService from "@/components/landing-page/order-of-service";
 import LeadPastor from "@/components/landing-page/lead-pastor";
 import Families from "@/components/landing-page/families";
+
+
+
 export default function Home() {
   return (
     <>

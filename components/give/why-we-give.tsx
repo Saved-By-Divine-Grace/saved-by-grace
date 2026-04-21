@@ -47,7 +47,7 @@ export default function WhyWeGive() {
               reference: "Luke 6:38",
               quote: "Give, and it will be given to you — a good measure, pressed down, shaken together and running over.",
             },
-          ].map((item, i) => (
+          ].map((item ) => (
 
             <ScriptureQuote
               key={item.reference}

@@ -52,11 +52,11 @@ export default function OrderOfService() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <div className="flex items-center gap-3 mb-5">
-            <div className="w-8 h-[1.5px] bg-red-600" />
+           
             <span className="text-[10px] font-medium tracking-[3.5px] uppercase text-red-600">
               Join Us
             </span>
-            <div className="w-8 h-[1.5px] bg-red-600" />
+            
           </div>
           <h2 className="text-[clamp(28px,4vw,44px)] font-bold text-neutral-900 leading-[1.15] max-w-xl">
            Worship With Us!

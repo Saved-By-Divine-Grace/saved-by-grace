@@ -34,7 +34,7 @@ export default function GiveHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
         >
-          "Honour the Lord with your wealth and with the first fruits of all your produce."
+          &quot;Honour the Lord with your wealth and with the first fruits of all your produce.&quot;
         </motion.p>
         <motion.span
           className="text-[12px] font-medium tracking-[2.5px] uppercase text-red-500 mt-2"
