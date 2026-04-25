@@ -10,7 +10,7 @@ interface AboutHeroProps {
 }
 
 const AboutHero: React.FC<AboutHeroProps> = ({
-  overlayOpacity = 0.45,
+  overlayOpacity = 0.2,
   className = "",
   navbarHeight = "0px",
 }) => {
@@ -21,7 +21,7 @@ const AboutHero: React.FC<AboutHeroProps> = ({
     >
       <div className="absolute inset-0">
         <Image
-          src="/sbg-hero.jpg"
+          src="/about-hero.jpg"
           alt="Church gathering"
           fill
           priority

@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-4 flex-wrap">
             <Link
-              href="/new-here"
+              href="/join-us"
               className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-[11px] font-medium tracking-[1.5px] uppercase px-7 py-3.5 transition-colors duration-200"
             >
               Plan Your Visit

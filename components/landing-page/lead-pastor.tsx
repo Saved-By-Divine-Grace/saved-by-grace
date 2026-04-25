@@ -21,7 +21,7 @@ export default function LeadPastor() {
         {/* Image — full width, no text over it */}
         <div className="relative w-full aspect-[4/5] overflow-hidden">
           <Image
-            src="/sbg-hero.jpg"
+            src="/lead-pastor.jpg"
             alt="Apostle Solomon Opeyemi"
             fill
             className="object-cover object-top"
@@ -106,14 +106,14 @@ export default function LeadPastor() {
 
         <div className="absolute inset-0 z-0">
           <Image
-            src="/sbg-hero.jpg"
+            src="/lead-pastor.jpg"
             alt="Apostle Solomon Opeyemi"
             fill
             className="object-cover object-center lg:object-[30%_center]"
             sizes="100vw"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/60 to-black/90" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-black/50 to-black/70" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
         </div>
 

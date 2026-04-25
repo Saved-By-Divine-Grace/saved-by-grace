@@ -5,11 +5,13 @@ import { motion } from "motion/react"
 
 export default function AboutBanner() {
   return (
-    <div className="mb-10 bg-white py-10">
+    <main className="bg-white pb-10">
+
+    <div className=" bg-white py-10">
 
     <section className="relative w-full  overflow-hidden h-[360px] lg:h-[450px]">
       <Image
-        src="/sbg-hero.jpg"
+        src="/sbg-fam.jpg"
         alt="SBDG congregation"
         fill
         quality={90}
@@ -17,8 +19,8 @@ export default function AboutBanner() {
         sizes="100vw"
       />
       {/* Dark overlay — heavier at bottom like the reference */}
-      <div className="absolute inset-0 bg-black/60" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
 
       {/* Content — bottom left aligned like the reference */}
       <div className="relative z-10 h-full flex flex-col justify-end px-6 md:px-12 lg:px-16 pb-12 lg:pb-16 max-w-7xl mx-auto">
@@ -43,5 +45,6 @@ export default function AboutBanner() {
       </div>
     </section>
         </div>
+          </main>
   )
 }

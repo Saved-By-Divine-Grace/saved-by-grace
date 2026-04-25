@@ -73,7 +73,7 @@ export default function Navbar() {
                 Saved By Divine Grace
               </p>
               <span className="block text-[9px] font-semibold tracking-[2.5px] uppercase text-red-600 mt-0.5">
-                Ministry
+                Of God Ministry
               </span>
             </div>
                 

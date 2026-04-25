@@ -2,10 +2,10 @@ import HeroSlider from './hero-slider';
 
 const heroSlides = [
   { image: '/sbg-hero.jpg', alt: 'Church gathering' },
+  { image: '/sbg-hero-4.jpg', alt: 'church gathering' },
   { image: '/sbg-hero-2.jpg', alt: 'Church service' },
-  // { image: '/sbg-hero-3.jpg', alt: 'Heritage exploration' },
-  // { image: '/sbg-hero-4.jpg', alt: 'Luxury resort' },
-  // { image: '/sbg-hero-5.jpg', alt: 'Nigerian fashion' },
+  { image: '/sbg-img-ii.jpg', alt: 'Church gathering' },
+  { image: '/sbg-hero-5.jpg', alt: 'church gathering' },
 ];
 
 export default function HomePage() {
