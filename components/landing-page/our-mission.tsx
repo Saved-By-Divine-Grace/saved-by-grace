@@ -116,7 +116,7 @@ export default function MissionStrip() {
         viewport={{ once: true, amount: 0.2 }}
         >
         <Image
-          src="/sbg-hero.jpg"
+          src="/sbg-img.jpg"
           alt="SBDG congregation in worship"
           fill
           className="object-cover object-center"

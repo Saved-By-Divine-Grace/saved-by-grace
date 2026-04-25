@@ -21,7 +21,7 @@ export default function LeadPastor() {
         {/* Image — full width, no text over it */}
         <div className="relative w-full aspect-[4/5] overflow-hidden">
           <Image
-            src="/sbg-hero.jpg"
+            src="/lead-pastor.jpg"
             alt="Apostle Solomon Opeyemi"
             fill
             className="object-cover object-top"
@@ -106,7 +106,7 @@ export default function LeadPastor() {
 
         <div className="absolute inset-0 z-0">
           <Image
-            src="/sbg-hero.jpg"
+            src="/lead-pastor.jpg"
             alt="Apostle Solomon Opeyemi"
             fill
             className="object-cover object-center lg:object-[30%_center]"
