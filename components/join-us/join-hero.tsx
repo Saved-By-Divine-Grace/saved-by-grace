@@ -7,14 +7,14 @@ export default function JoinHero() {
   return (
     <section className="relative w-full h-[80vh] min-h-[420px] overflow-hidden bg-neutral-950">
       <Image
-        src="/sbg-hero.jpg"
+        src="/sbg-hero-5.jpg"
         alt="Join SBDG"
         fill
         priority
         className="object-cover object-center"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-black/55" />
+      <div className="absolute inset-0 bg-black/20" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto">
