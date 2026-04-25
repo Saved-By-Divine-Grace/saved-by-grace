@@ -10,7 +10,7 @@ interface AboutHeroProps {
 }
 
 const AboutHero: React.FC<AboutHeroProps> = ({
-  overlayOpacity = 0.2,
+  overlayOpacity = 0.1,
   className = "",
   navbarHeight = "0px",
 }) => {
