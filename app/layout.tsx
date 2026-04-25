@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 
   title: {
-    default: "Saved By Divine Grace of God Ministry",
+     default: "Saved By Divine Grace of God Ministry | Ore, Nigeria",
     template: "%s | Saved By Divine Grace of God Ministry",
   },
 
@@ -67,12 +67,12 @@ export const metadata: Metadata = {
     locale: "en_NG",
     url: BASE_URL,
     siteName: "Saved By Divine Grace of God Ministry",
-    title: "Saved By Divine Grace of God Ministry",
+    title: "Saved By Divine Grace of God Ministry | Ore, Nigeria",
     description:
       "Committed to winning souls through evangelism and building a strong prayer and word-driven church. Join us every Sunday — Ore, Ondo State, Nigeria.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Saved By Divine Grace of God Ministry",
@@ -83,10 +83,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Saved By Divine Grace of God Ministry",
+    title: "Saved By Divine Grace of God Ministry | Ore, Nigeria",
     description:
       "Committed to winning souls through evangelism and building a strong prayer and word-driven church. Join us every Sunday.",
-    images: ["/og-image.png"],
+    images: ["/og-image.jpg"],
     site: "@sbdg_m",
     creator: "@sbdg_m",
   },
