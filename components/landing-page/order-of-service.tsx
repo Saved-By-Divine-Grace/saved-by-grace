@@ -7,7 +7,7 @@ interface ServiceItem {
   title: string
   day: string
   time: string
-  description: string
+  description?: string
   image: string
 }
 
@@ -16,8 +16,7 @@ const services: ServiceItem[] = [
     title: "Sunday Service",
     day: "Sunday",
     time: "8:00 AM - 11:00 AM",
-    description:
-      "Join us for a powerful time of worship, the word, and fellowship as we gather in the presence of God.",
+    
       image: "/sbg-fam.jpg",
     
   },
@@ -25,16 +24,14 @@ const services: ServiceItem[] = [
     title: "Midweek Service",
     day: "Wednesday",
     time: "8:00AM - 12:00 PM",
-    description:
-      "A mid-week encounter with God's word to keep you grounded, refreshed, and spiritually alive.",
+    
     image: "/sbg-fam-2.jpg",
   },
   {
     title: "Journey Mercies Service",
     day: "Monday",
     time: "6:00 AM - 7:00 AM",
-    description:
-      "Start your week in the place of prayer — interceding, declaring, and positioning yourself for breakthrough.",
+    
     image: "/sbg-iv.jpg",
   },
 ]
