@@ -7,7 +7,6 @@ interface ServiceItem {
   title: string
   day: string
   time: string
-  description?: string
   image: string
 }
 
@@ -124,11 +123,7 @@ export default function OrderOfService() {
                     {service.time}
                   </p>
 
-                  {/* Description */}
-                  <p className="text-[13px] text-neutral-500 leading-[1.75] font-light">
-                    {service.description}
-                  </p>
-
+                  
                   
 
 
