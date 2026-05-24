@@ -2,6 +2,9 @@ import type { Metadata, Viewport } from "next"
 import "./globals.css"
 import localFont from "next/font/local"
 import JsonLd from "@/components/shared/JsonLd"
+import {draftMode} from 'next/headers'
+import {VisualEditing} from 'next-sanity/visual-editing'
+import {SanityLive} from '@/sanity/lib/live'
 
 const raleway = localFont({
   src: [
@@ -125,15 +128,10 @@ export const metadata: Metadata = {
     },
   },
 
-  // ── Verification ───────────────────────────────────────────────────
-  // Add these once you've verified in Google Search Console and Bing
-  // verification: {
-  //   google: "your-google-verification-code",
-  //   yandex: "your-yandex-code",
-  // },
+  
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
@@ -142,6 +140,8 @@ export default function RootLayout({
     <html lang="en" className={raleway.variable}>
       <body className={raleway.className}>
         {children}
+        <SanityLive />
+        {(await draftMode()).isEnabled && <VisualEditing />}
         <JsonLd />
       </body>
     </html>
