@@ -139,7 +139,7 @@ export default function Footer() {
                     href={link.href}
                     className="text-[13px] text-black hover:text-red-500 font-normal transition-colors duration-200 flex items-center gap-2 group"
                   >
-                    <span className="w-3 h-[1px] bg-black group-hover:bg-red-600 group-hover:w-5 transition-all duration-200" />
+                    
                     {link.label}
                   </Link>
                 </li>
@@ -159,7 +159,7 @@ export default function Footer() {
                     href={link.href}
                     className="text-[13px] text-black hover:text-red-500 font-normal transition-colors duration-200 flex items-center gap-2 group"
                   >
-                    <span className="w-3 h-[1px] bg-black group-hover:bg-red-600 group-hover:w-5 transition-all duration-200" />
+                    
                     {link.label}
                   </Link>
                 </li>
