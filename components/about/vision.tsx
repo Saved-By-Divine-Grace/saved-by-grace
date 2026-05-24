@@ -32,8 +32,8 @@ export default function MissionVision() {
           </p>
 
           <p className="text-[15px] text-black font-normal leading-[1.9]">
-            We believe the church is not a building but a people — a family of
-            fellowcitizens with the saints and of the household of God,
+            We believe the church is not a building but a people and a family of
+            fellow citizens with the saints and of the household of God,
             called to reflect His grace in every sphere of life.
           </p>
         </motion.div>

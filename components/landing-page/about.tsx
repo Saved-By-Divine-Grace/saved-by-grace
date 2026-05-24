@@ -66,7 +66,7 @@ export default function About() {
           <p className="text-[15px] text-neutral-600 leading-[1.8] mb-8 font-light">
             Saved by Divine Grace of God Ministry is committed to winning souls
             through evangelism and building a strong prayer and word-driven
-            church — a community where every member is a fellowcitizen with the
+            church, a community where every member is a fellowcitizen with the
             saints and of the household of God.
           </p>
 
