@@ -3,11 +3,12 @@
 import Link from "next/link";
 import { motion } from "motion/react";
 
+
 const families = [
   { name: "Blessing Family", image: "/sbg-hero.jpg" },
-  { name: "Glory Family", image: "/sbg-hero.jpg" },
-  { name: "Peace Family", image: "/sbg-hero.jpg" },
-  { name: "Faith Family", image: "/sbg-hero.jpg" },
+  { name: "Glory Family", image: "/sbg-hero-4.jpg" },
+  { name: "Peace Family", image: "/sbg-hero-2.jpg" },
+  { name: "Faith Family", image: "/sbg-img-ii.jpg" },
   { name: "Grace Family", image: "/sbg-hero.jpg" },
 ];
 
